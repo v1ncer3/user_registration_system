@@ -1,0 +1,18 @@
+#divComponent{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 5px;
+}
+
+label, input{
+    padding: 5px;
+    padding-left: 0px;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 1px;
+}
+
+input{
+    box-shadow: 0px 0px 1px 0px black;
+}
