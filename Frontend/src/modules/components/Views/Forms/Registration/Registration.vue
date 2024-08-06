@@ -1,5 +1,5 @@
 <script setup>
-    import { ref } from 'vue';
+    import { ref, computed } from "vue";
     import Header from '../../Header/Header.vue';
     import Email from '../../../Fields/Email/Email.vue';
     import Cnpj from '../../../Fields/CnpjCpf/Cnpj/Cnpj.vue';
@@ -13,6 +13,8 @@
     import Continuar from '../../../Buttons/Continuar/Continuar.vue';
     import Voltar from '../../../Buttons/Voltar/Voltar.vue';
     import Salutation from '../Stages/Salutation/Salutation.vue';
+    import { STAGES, PERSON } from '../../../../../shared/enums/Form.js';
+
     const vcclicouCadastrar = () => {
         alert('vc clicou Cadastrar, congrats');
     }
@@ -25,18 +27,42 @@
         alert('vc clicou Voltar, congrats');
     }
 
+    const stage = ref(1);
+    const typePerson = ref('');
 
-    const stage = ref(2);
+    const isEmailStage = computed( () => {
+        return (stage.value === STAGES.EMAIL.ID);
+    }) 
+
+    const isPersonStage = computed( () => {
+        return (stage.value === STAGES.PHYSICAL_PERSON.ID && PERSON.PHYSICAL_PERSON === typePerson);
+    }) 
+    
+    const nextStage = (data) => {
+        //userInfo.value = { ...userInfo.value, ...data.infos };
+
+        //if (isReviewStage.value && data.stage === STAGES.EMAIL) await postUser();
+
+        stage.value = data.nextStage.id;
+        typePerson = data.nextStage.typePerson;
+    };
 </script>
 
 <template>
-    <div v-if="stage==1" id="salutation" class="stages">
-        <Salutation />
+    <div v-if="isEmailStage" id="salutation" class="stages">
+        <Salutation :stage="STAGES.EMAIL.ID" :title="STAGES.EMAIL.TITLE" @nextStage="nextStage"/>
     </div>
-    <div v-if="stage==2" id="salutation" class="stages">
+    <div v-if="isPersonStage" id="salutation" class="stages">
         ola
     </div>
-    <!--<Header :message="`Seja bem-vindo(a)`" :stage="1" />
+
+
+
+
+
+
+
+    <!--<Header :message="`Seja bem-vindo(a)`" :stage="stage" />
     <Header :message="`Pessoa Física`" :stage="2"/>
     <Header :message="`Pessoa Jurídica`" :stage="2" />
     <Header :message="`Senha de acesso`" :stage="3" />
@@ -62,4 +88,3 @@
 <style scoped>
 @import "./Registration.scss";
 </style>
- 

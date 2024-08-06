@@ -9,7 +9,6 @@
 </template>
 
 <style scoped>
-@import "./Cnpj.scss";
 @import "../../Fields.scss";
 </style>
  

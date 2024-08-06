@@ -6,9 +6,19 @@ const toggleField = (selectedType) => {
 
     if (selectedType === 'cnpjRadio') {
         cpfField.checked = false;
+        this.$emit('personTypeChanges', {type: 'cnpj'});
+        delete cpfField.required;
+        cnpjField.required = true;
     } else {
         cnpjField.checked = false;
+        
+        delete cnpjField.required;
+        cpfField.required = true;
     }
+
+    const emits = defineEmits({
+        this.$emit('personTypeChanges', {type: 'cpf'});
+    })
 }
 </script>
 
@@ -17,11 +27,11 @@ const toggleField = (selectedType) => {
     <!--     <legend>Select a maintenance drone:</legend> -->
     <div>
         <div id="cpf">
-            <input type="radio" id="cpfRadio" name="cpf" value="CPF" @click="toggleField('cpfRadio')"/>
+            <input required type="radio" id="cpfRadio" name="cpf" value="CPF" @click="toggleField('cpfRadio')" @click="this.$emit('personTypeChanges', {type: 'cpf'});"/>
             <label for="cpfRadio">Pessoa física</label>
         </div>
         <div id="cnpj">
-            <input type="radio" id="cnpjRadio" name="cnpj" value="CNPJ" @click="toggleField('cnpjRadio')"/>
+            <input required type="radio" id="cnpjRadio" name="cnpj" value="CNPJ" @click="toggleField('cnpjRadio')"/>
             <label for="cnpjRadio">Pessoa jurídica</label>
         </div>
     </div>
