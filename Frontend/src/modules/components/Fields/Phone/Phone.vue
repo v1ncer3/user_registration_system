@@ -9,7 +9,6 @@
 </template>
 
 <style scoped>
-@import "./Phone.scss";
 @import "../Fields.scss";
 </style>
  

@@ -1,5 +1,4 @@
 <script setup>
-import { defineProps } from 'vue'
 
 const props = defineProps({
    callbackFunction: {
@@ -14,7 +13,7 @@ const handleClick = () => {
 
 <template>
     <div id="divComponent">
-        <button id=button type="button" @click="handleClick">Continuar</button>
+        <button id=button type="submit" @click="handleClick">Continuar</button>
     </div>
 </template>
 

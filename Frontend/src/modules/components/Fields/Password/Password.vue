@@ -9,7 +9,6 @@
 </template>
 
 <style scoped>
-@import "./Password.scss";
 @import "../Fields.scss";
 </style>
  

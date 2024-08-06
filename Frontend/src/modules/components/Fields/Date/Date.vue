@@ -1,6 +1,4 @@
 <script setup>
-    import { defineProps } from 'vue'
-
     const props = defineProps({
         labelExtended:{
             type: String
@@ -17,7 +15,6 @@
 </template>
 
 <style scoped>
-@import "./Date.scss";
 @import "../Fields.scss";
 </style>
  
