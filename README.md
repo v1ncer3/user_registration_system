@@ -22,7 +22,7 @@ $ npm install
 $ npm run dev
 
 <h2>🎲 Rodando o Backend</h2>
-<h2>Depois de inicializar o frontend no primeiro terminal, acesse um novo terminal/cmd na pasta raiz: `user_registration_system`</h2>
+<h3>Depois de inicializar o frontend no primeiro terminal, acesse um novo terminal/cmd na pasta raiz: `user_registration_system`</h3>
 
 <h3>Acesse `user_registration_system/Backend`</h3>
 $ cd .\Backend
