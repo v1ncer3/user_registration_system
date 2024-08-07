@@ -12,7 +12,7 @@ Além disto é bom ter um editor para trabalhar com o código como <a href="http
 
 <h2>🎲 Rodando o Frontend</h2>
 
-<h3>Instale as dependências</h3>
+<h3>Instale as dependências em user_registration_system/Frontend</h3>
 $ npm install
 
 <h3>Compile e habilite a recarga automática para desenvolvimento, logo a aplicação estará disponível em "http://localhost:3060/"</h3>
@@ -20,7 +20,7 @@ $ npm run dev
 
 <h2>🎲 Rodando o Backend</h2>
 
-<h3>Primeiro é necessário entrar na pasta "backend"</h3>
+<h3>Instale as dependências em user_registration_system/Backend</h3>
 $ cd .\backend
 
 <h3>Instale as dependências</h3>
