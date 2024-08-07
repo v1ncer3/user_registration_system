@@ -12,6 +12,9 @@ Além disto é bom ter um editor para trabalhar com o código como <a href="http
 
 <h2>🎲 Rodando o Frontend</h2>
 
+<h3>Acesse user_registration_system/Backend</h3>
+$ cd .\Frontend
+
 <h3>Instale as dependências em user_registration_system/Frontend</h3>
 $ npm install
 
@@ -20,8 +23,8 @@ $ npm run dev
 
 <h2>🎲 Rodando o Backend</h2>
 
-<h3>Instale as dependências em user_registration_system/Backend</h3>
-$ cd .\backend
+<h3>Acesse user_registration_system/Backend</h3>
+$ cd .\Backend
 
 <h3>Instale as dependências</h3>
 $ npm install
