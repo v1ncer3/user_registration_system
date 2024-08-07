@@ -1,4 +1,5 @@
 <script setup>
+const emits = defineEmits(['personTypeChanges']);
 
 const toggleField = (selectedType) => {
     const cnpjField = document.getElementById('cnpjRadio');
@@ -6,19 +7,17 @@ const toggleField = (selectedType) => {
 
     if (selectedType === 'cnpjRadio') {
         cpfField.checked = false;
-        this.$emit('personTypeChanges', {type: 'cnpj'});
-        delete cpfField.required;
+        cpfField.required = false;
         cnpjField.required = true;
+        emits('personTypeChanges', {type: 'cnpj'});
     } else {
         cnpjField.checked = false;
-        
-        delete cnpjField.required;
+        cnpjField.required = false;
         cpfField.required = true;
+        emits('personTypeChanges', {type: 'cpf'});
     }
 
-    const emits = defineEmits({
-        this.$emit('personTypeChanges', {type: 'cpf'});
-    })
+    
 }
 </script>
 
@@ -27,7 +26,7 @@ const toggleField = (selectedType) => {
     <!--     <legend>Select a maintenance drone:</legend> -->
     <div>
         <div id="cpf">
-            <input required type="radio" id="cpfRadio" name="cpf" value="CPF" @click="toggleField('cpfRadio')" @click="this.$emit('personTypeChanges', {type: 'cpf'});"/>
+            <input required type="radio" id="cpfRadio" name="cpf" value="CPF" @click="toggleField('cpfRadio')"/>
             <label for="cpfRadio">Pessoa física</label>
         </div>
         <div id="cnpj">
@@ -46,7 +45,7 @@ div{
 }
 
 #cpf, #cnpj{
-    padding:5px;
+    padding:10px;
 }
 </style>
  

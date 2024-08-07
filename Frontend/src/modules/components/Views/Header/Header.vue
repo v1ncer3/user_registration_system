@@ -14,17 +14,10 @@ const props = defineProps({
 </script>
 
 <template>
-    <div id="header">
-        <div>
-            <p>Etapa <span :style="{ color: 'orange' }">{{ stage }}</span> de 4</p>
-        </div>
-        <div>
-            <h2>{{ message }}</h2>
-        </div>
-    </div>
+    <p>Etapa <span :style="{ color: 'orange' }">{{ stage }}</span> de 4</p>
+    <h2>{{ message }}</h2>
 </template>
 
 <style scoped>
-@import "./Header.scss";
 </style>
  
