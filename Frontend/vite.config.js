@@ -7,7 +7,7 @@ dotenv.config()
 // https://vitejs.dev/config/
 export default defineConfig({
   server:{
-    port: parseInt(process.env.PORT_SERVER_FRONTEND) || 3001,
+    port: 3060 || 3001,
 
   },
   plugins: [

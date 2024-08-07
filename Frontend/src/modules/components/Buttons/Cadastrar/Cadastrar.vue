@@ -1,19 +1,8 @@
 <script setup>
-const props = defineProps({
-   callbackFunction: {
-    type: Function
-   }
-})
-
-const handleClick = () => {
-  props.callbackFunction()
-}
 </script>
 
 <template>
-    <div id="divComponent">
-        <button id=button type="button" @click="handleClick">Cadastrar</button>
-    </div>
+    <button id=button type="submit">Cadastrar</button>
 </template>
 
 <style scoped>
