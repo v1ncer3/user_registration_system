@@ -18,7 +18,7 @@ $ cd .\Frontend
 <h3>Instale as dependências</h3>
 $ npm install
 
-<h3>Compile e habilite a recarga automática para desenvolvimento, logo a aplicação estará disponível em "http://localhost:3060/"</h3>
+<h3>Inicialize o servidor do frontend e aplicação estará disponível em `http://localhost:3060/`</h3>
 $ npm run dev
 
 <h2>🎲 Rodando o Backend</h2>
@@ -29,8 +29,8 @@ $ cd .\Backend
 <h3>Instale as dependências</h3>
 $ npm install
 
-<h3>Ainda na pasta "backend", execute o seguinte comando e o backend estará disponível em "http://localhost:3030"</h3>
-$ node src/index.js
+<h3>Inicialize o servidor do backend e aplicação estará disponível em "http://localhost:3030"</h3>
+$ npm start
 
 <h3>🛠 Tecnologias e bibliotecas</h3>
 <p>As seguintes ferramentas foram usadas na construção do projeto:</p>
@@ -40,6 +40,6 @@ $ node src/index.js
 <p>Vue é um framework progressivo para a construção de interfaces de usuário. Ao contrário de outros frameworks monolíticos, Vue foi projetado desde sua concepção para ser adotável incrementalmente<p>
 <br>
 
-- [Node](https://nodejs.org/en/)
-<p>Node é um abiente onde é possível criar aplicações Javascript sem a necessidade de um browser.<p>
+- [Node.js](https://nodejs.org/en)
+<p>Node.js é um ambiente de execução JavaScript baseado no motor V8 do Chrome. Ele permite que você execute código JavaScript no lado do servidor, oferecendo uma arquitetura assíncrona e orientada a eventos, ideal para aplicações escaláveis.<p>
 <br>
