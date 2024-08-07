@@ -1,5 +1,5 @@
 <h1>Sistema para cadastro de usuários</h1>
-<p>Um formulário para realizar o cadastro de usuários e enviar para um ambiente nodeJS.</p>
+<p>Um formulário para realizar o cadastro de usuários e enviar para um ambiente NodeJS.</p>
 
 <h2>Pré-requisitos</h2>
 <p>
