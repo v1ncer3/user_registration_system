@@ -8,7 +8,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 Além disto é bom ter um editor para trabalhar com o código como <a href="https://code.visualstudio.com/">VSCode</a>
 </p>
 
-<h2>Depois de clonar o projeto em sua maquina, acesse a pasta do projeto no terminal/cmd, na pasta raiz: `user_registration_system`</h2>
+<h2>Depois de clonar o projeto em sua máquina, acesse a pasta do projeto no terminal/cmd, na pasta raiz: `user_registration_system`</h2>
 
 <h2>🎲 Rodando o Frontend</h2>
 
@@ -22,6 +22,7 @@ $ npm install
 $ npm run dev
 
 <h2>🎲 Rodando o Backend</h2>
+<h2>Depois de inicializar o frontend no primeiro terminal, acesse um novo terminal/cmd na pasta raiz: `user_registration_system`</h2>
 
 <h3>Acesse `user_registration_system/Backend`</h3>
 $ cd .\Backend
