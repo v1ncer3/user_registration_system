@@ -12,10 +12,10 @@ Além disto é bom ter um editor para trabalhar com o código como <a href="http
 
 <h2>🎲 Rodando o Frontend</h2>
 
-<h3>Acesse user_registration_system/Backend</h3>
+<h3>Acesse user_registration_system/Frontend</h3>
 $ cd .\Frontend
 
-<h3>Instale as dependências em user_registration_system/Frontend</h3>
+<h3>Instale as dependências</h3>
 $ npm install
 
 <h3>Compile e habilite a recarga automática para desenvolvimento, logo a aplicação estará disponível em "http://localhost:3060/"</h3>
