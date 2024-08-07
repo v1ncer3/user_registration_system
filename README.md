@@ -33,6 +33,10 @@ $ npm install
 <h3>Inicialize o servidor do backend e aplicação estará disponível em `http://localhost:3030`</h3>
 $ npm start
 
+
+<h3>Testando o projeto</h3>
+<h2>Inicie o navegador de sua preferência e acesse `http://localhost:3060/` e agora é só utilizar a ferramenta.</h2>
+
 <h3>🛠 Tecnologias e bibliotecas</h3>
 <p>As seguintes ferramentas foram usadas na construção do projeto:</p>
 <br>
@@ -44,3 +48,5 @@ $ npm start
 - [Node.js](https://nodejs.org/en)
 <p>Node.js é um ambiente de execução JavaScript baseado no motor V8 do Chrome. Ele permite que você execute código JavaScript no lado do servidor, oferecendo uma arquitetura assíncrona e orientada a eventos, ideal para aplicações escaláveis.<p>
 <br>
+
+<h3>Muito obrigado e até logo.</h3>
