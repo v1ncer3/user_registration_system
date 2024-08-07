@@ -30,7 +30,7 @@ $ cd .\Backend
 <h3>Instale as dependências</h3>
 $ npm install
 
-<h3>Inicialize o servidor do backend e aplicação estará disponível em "http://localhost:3030"</h3>
+<h3>Inicialize o servidor do backend e aplicação estará disponível em `http://localhost:3030`</h3>
 $ npm start
 
 <h3>🛠 Tecnologias e bibliotecas</h3>
